@@ -50,4 +50,8 @@ app.get('/api/bills/drop', function (req, res) {
     res.status(200).send({'message': 'Done!'});
 });
 
+app.get('/health', function (req, res) {
+    res.status(200).send({'status': 'UP'});
+});
+
 module.exports = app;
